@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Airsoft Ihrisko Ústie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="fb-root"></div>
+        
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    xfbml :true,
+                    version : 'v19.0'
+                });
+            };
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id=id;
+                js.src = "https://connect.facebook.net/sk_SK/sdk/xfbml.customerchat.js";
+                fjs.parentNode.insertBefore(js, fjs); // ✔️ dobre
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+    <header>
+        <img src="img/506766426_122242604738212744_647013357958250168_n.png" alt="logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="about.html">O ihrisku</a></li>
+                <li><a href="gallery.html">Galéria</a></li>
+                <li><a href="rules.html">Pravidlá</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="rent.html">Požičovňa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-section">
+        <h1>Kontaktujte nás</h1>
+
+        <div class="contact-info">
+            <p><strong>Telefón:</strong> +421 904 958 870</p>
+            <p><strong>E-mail:</strong>airsoftove.ihrisko.ustie@gmail.com</p>
+            <p><strong>Súradnice:</strong>49.37331254201944, 19.55988549508441</p>
+            <p><strong>Messenger:</strong><a href="https://m.me/Airsoft%20Ihrisko%20%C3%9Astie" target="_blank">Napíšte nám</a></p>
+        </div>
+
+        <h2>Napíšte nám správu</h2>
+        <form class="contact-form">
+            <label for="name">Meno:</label>
+            <input type="text" id="name" name="email" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Správa</label>
+            <textarea id="message" name="message" rows="5"required></textarea>
+
+            <button type="submit">odoslať</button>
+        </form>
+
+        <h2>Kde nás nájdete</h2>
+
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.803357235576!2d19.55733!3d49.37327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715c700375ea13b%3A0x3043edd0cf2d16da!2sAirsoft+ihrisko+%C3%9Astie!5e0!3m2!1ssk!2ssk!4v1720000000000"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Airsoft Ihrisko Ústie</p>
+    </footer>
+
+    <div class="fb-customerchat"
+        attribution="biz_inbox"
+        page_id="61578025496912"
+        theme_color="#3f5534"
+        logged_in_greeting="Ahoj, ako ti môžeme pomôcť?"
+        logged_out_greeting="Ahoj! Nechaj nám správu a odpovieme ti čo najskôr.">
+    </div>
+</body>
+</html>

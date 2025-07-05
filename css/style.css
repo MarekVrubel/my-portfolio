@@ -1,0 +1,249 @@
+/*index.html*/
+
+/********************************BODY*********************************/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #658953;
+    color: #1c1c1c;
+}
+/*********************************HEADER*********************************/
+header {
+    background-color: #3f5534;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+}
+/*********************************HEADER LOGO*********************************/
+.logo {
+    height: 100px;
+}
+/*********************************NAVIGATION*********************************/
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+/*********************************NAVIGATION LINKS*********************************/
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: #3f5534;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #3f5534;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+    background-color: #253824;
+}
+/*********************************HERO*********************************/
+.hero {
+    background: url('../img/fotky-ihriska/511217486_984931516911905_2412178156544255237_n.jpg') center/cover no-repeat;
+    color: white;
+    position: relative;
+    padding: 30px;
+    background-color: #ddd;
+    text-align: center;
+}
+.hero::after {
+    content:'';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: auto;
+}
+.btn-primary {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background: #c0392b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.btn-primary:hover {
+    background: #e74c3c;
+}
+/***************************UVODNÁ SEKCIA***************************/
+.intro-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+}
+.intro-text {
+    text-align: center;
+    flex: 1 1 300px;
+}
+.gallery-row {
+    flex: 2 1 300px;
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+.gallery-row img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/*********************************HERO IMAGE*********************************/
+.gallery {
+    padding: 20px;
+    text-align: center;
+}
+/* *********************************GALLERY*********************************/
+.gallery-row img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+/* *********************************FOOTER*********************************/
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*********************************O ihrisku*********************************/
+.page-section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+.page-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+.about-block {
+    background: #3f5534;
+    padding: 20px;
+    border-left: 5px solid #c0392b;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.about-block h2 {
+    margin-top: 0;
+    color: #c0392b;
+}
+
+/*********************************GALLERY*********************************/ 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+.gallery-grid a img {
+    display: block;
+}
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* *********************************CONTACT*********************************/
+
+.contact-info {
+    background-color: #3f5534;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-left: 5px solid #c0392b;
+    border-radius: 6px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #e74c3c;
+}
+.map-container {
+    border: 2px solid #ddd;
+    border-radius:6px;
+    overflow: hidden;
+}
+
+/* *********************************RENT*********************************/
+.rent-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.rent-item {
+    width: 280px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.rent-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+.button-wrapper {
+    margin-top: auto;
+}
+.rent-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #3f5534;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+.rent-button:hover {
+    background-color: #5c7a4c;
+}
